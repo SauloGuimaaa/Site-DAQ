@@ -1,0 +1,233 @@
+/* Estilos Base */
+.incluso-daq-section {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .incluso-daq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/texture.png') repeat;
+    opacity: 0.03;
+    pointer-events: none;
+  }
+  
+  /* Header */
+  .section-header {
+    max-width: 800px;
+    margin: 0 auto 80px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .section-badge {
+    display: inline-block;
+    background: rgba(255, 153, 0, 0.15);
+    color: #FF9900;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1.3;
+  }
+  
+  .section-title .highlight {
+    color: #FF9900;
+    position: relative;
+  }
+  
+  .section-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 153, 0, 0.3);
+    z-index: -1;
+    border-radius: 3px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #ccc;
+  }
+  
+  .section-subtitle strong {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  /* Grid de Benefícios */
+  .daq-includes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+  }
+  
+  .daq-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    z-index: 1;
+  }
+  
+  .daq-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 153, 0, 0.05) 0%, rgba(255, 153, 0, 0) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .daq-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 153, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .daq-card:hover::before {
+    opacity: 1;
+  }
+  
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 153, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  .card-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .daq-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .daq-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #FF9900;
+    border-radius: 3px;
+  }
+  
+  .daq-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #bbb;
+    margin-bottom: 20px;
+  }
+  
+  .card-tag {
+    display: inline-block;
+    background: rgba(255, 153, 0, 0.1);
+    color: #FF9900;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  /* CTA */
+  .cta-wrapper {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: #FF9900;
+    color: #0a0a0a;
+    padding: 18px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 153, 0, 0.4);
+    background: #ffa31a;
+  }
+  
+  .cta-button svg {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cta-button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .cta-note {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 15px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .incluso-daq-section {
+      padding: 80px 20px;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .daq-includes-grid {
+      grid-template-columns: 1fr;
+    }
+  }

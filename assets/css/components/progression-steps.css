@@ -1,0 +1,82 @@
+/* Progress Steps - Versão Final Ajustada */
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 0.5rem;
+    max-width: 600px;
+    position: relative;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    gap: 0.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.step-number {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-dark);
+    color: var(--black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: 2px solid rgba(255, 153, 0, 0.3);
+    margin-right: 8px;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step.active .step-number {
+    background: var(--primary-color);
+    color: var(--black);
+    border-color: var(--primary-color);
+}
+
+.step-text {
+    font-size: 0.8rem;
+    color: var(--gray-light);
+    display: inline;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.step.active .step-text {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.step-connector {
+    flex: 1;
+    height: 2px;
+    background: rgba(255, 153, 0, 0.3);
+    margin: 0 0.5rem;
+    min-width: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .progress-steps {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .step-connector {
+        width: 1px;
+        height: 15px;
+        margin: 5px 0 5px 12px;
+    }
+}

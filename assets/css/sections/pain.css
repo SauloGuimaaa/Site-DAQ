@@ -1,0 +1,131 @@
+/* Pain Section */
+.pain-section {
+    position: relative;
+    padding: var(--spacing-large) 0;
+    background: linear-gradient(to bottom, #0a0a0a, #111);
+    overflow: hidden;
+}
+
+.pain-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 70%, rgba(255, 0, 0, 0.05) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.pain-section .section-title {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-small);
+}
+
+.pain-section .section-subtitle {
+    color: var(--gray-light);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-medium);
+}
+
+.highlight-text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: var(--spacing-small);
+    margin: var(--spacing-medium) auto;
+    max-width: 1200px;
+}
+
+.pain-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #FF4C4C;
+    transition: var(--transition-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+.pain-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 76, 76, 0.05) 0%, transparent 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: var(--transition-fast);
+}
+
+.pain-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 76, 76, 0.1);
+}
+
+.pain-item:hover::before {
+    opacity: 1;
+}
+
+.pain-icon {
+    color: #FF4C4C;
+    font-size: 1.5rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.pain-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--gray-light);
+}
+
+.pain-cta {
+    text-align: center;
+    margin-top: var(--spacing-medium);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pain-conclusion {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-small);
+    color: var(--white);
+    line-height: 1.7;
+}
+
+.cta-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: none;
+}
+
+.cta-outline:hover {
+    background: var(--primary-color);
+    color: var(--black);
+}
+
+@media (max-width: 768px) {
+    .pain-item {
+        padding: 20px;
+    }
+    
+    .pain-content p {
+        font-size: 1rem;
+    }
+    
+    .pain-conclusion {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,278 @@
+.garantia-investimento-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
+    padding: 80px 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.garantia-investimento-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,153,0,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.garantia-investimento-section .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.garantia-bloco, .investimento-bloco {
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 153, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.garantia-badge {
+    display: inline-block;
+    background: #FF9900;
+    color: #000;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #FF9900;
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.garantia-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.garantia-text .destaque {
+    color: #FF9900;
+    font-weight: 600;
+}
+
+.garantia-icon {
+    margin-top: 20px;
+}
+
+/* Adicione isso ao seu arquivo styles.css */
+.investimento-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Isso centraliza todos os itens filhos horizontalmente */
+  text-align: center; /* Isso centraliza o texto */
+}
+
+/* Garante que o botão CTA fique centralizado */
+.cta-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex; /* Mantém o alinhamento interno dos ícones */
+}
+
+/* Se precisar centralizar também os selos de segurança */
+.selos-seguranca {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.investimento-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.riscado {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.preco-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.preco-avista, .preco-parcelado {
+    flex: 1;
+    min-width: 280px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preco-avista {
+    background: rgba(0, 200, 83, 0.1);
+    border: 1px solid rgba(0, 200, 83, 0.3);
+}
+
+.preco-parcelado {
+    background: rgba(33, 150, 243, 0.1);
+    border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.preco {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.condicao {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.economia, .total {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.ou-divider {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-weight: 700;
+}
+
+.ou-divider::before, .ou-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 10px;
+}
+
+.bonus-bloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.bonus-item {
+    background: rgba(255, 153, 0, 0.1);
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    color: #FF9900;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    background: #FF9900;
+    color: #000;
+    border-radius: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(255, 153, 0, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 153, 0, 0.4);
+    background: #ffaa22;
+}
+
+.cta-button svg {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+    transform: translateX(5px);
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(255, 153, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 153, 0, 0);
+    }
+}
+
+.selos-seguranca {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.selos-seguranca img {
+    height: 50px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.selos-seguranca img:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .garantia-bloco, .investimento-bloco {
+        padding: 30px 20px;
+        margin-bottom: 50px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .preco-container {
+        flex-direction: column;
+    }
+    
+    .preco-avista, .preco-parcelado {
+        width: 100%;
+    }
+    
+    .cta-button {
+        padding: 18px 30px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,627 @@
+
+/* CTA Final - Estilos Modernizados */
+.cta-final-section {
+  background: linear-gradient(135deg, #111 0%, #222 100%);
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-final-section::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,153,0,0.2) 0%, rgba(255,153,0,0) 70%);
+  border-radius: 50%;
+}
+
+.cta-final-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-final-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #FF9900;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.cta-final-subtitle {
+  font-size: 1.3rem;
+  color: #eee;
+  margin-bottom: 40px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.cta-final-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cta-button.grande {
+  padding: 18px 45px;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(255, 153, 0, 0.3);
+}
+
+.cta-button.grande svg {
+  transition: transform 0.3s ease;
+}
+
+.cta-button.grande:hover svg {
+  transform: translateX(5px);
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 153, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 153, 0, 0); }
+}
+
+.cta-garantia {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Rodapé - Estilos Modernizados */
+.footer-daq {
+  background: #0a0a0a;
+  color: #bbb;
+  padding: 60px 20px 30px;
+  font-size: 0.95rem;
+  border-top: 1px solid #222;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-copyright {
+  color: #666;
+  margin-top: 10px;
+}
+
+.footer-cnpj {
+  color: #444;
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px 25px;
+}
+
+.footer-links a {
+  color: #FF9900;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #FF9900;
+}
+
+.footer-social svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-seals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #222;
+}
+
+.footer-selo img {
+  width: 160px;
+  max-width: 100%;
+  filter: brightness(1.2);
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.footer-selo img:hover {
+  transform: scale(1.05);
+}
+
+.footer-payment img {
+  height: 30px;
+  filter: grayscale(100%) brightness(1.5);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.footer-payment img:hover {
+  filter: grayscale(0) brightness(1.2);
+  opacity: 1;
+}
+
+.logo-circle.small {
+  width: 120px;
+  height: 120px;
+  font-size: 0.8rem;
+  box-shadow: 0 5px 20px rgba(255, 153, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.logo-circle.small:hover {
+  transform: scale(1.05);
+}
+
+.footer-payment-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.payment-security {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.security-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.security-item i {
+  color: #4CAF50;
+}
+
+.payment-methods {
+  flex-grow: 1;
+}
+
+.payment-methods p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-payment-info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .payment-security {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .footer-main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    justify-content: flex-end;
+  }
+  
+  .footer-social {
+    justify-content: flex-end;
+  }
+  
+  .footer-seals {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* WhatsApp Flutuante */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 5px 25px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: pulse 2s infinite;
+    will-change: transform;
+}
+
+.floating-whatsapp a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: var(--spacing-medium) 0;
+    text-align: center;
+}
+
+/* Animações */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-subtitle {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .kyrlla-image {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .logo-circle {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .logo-line1 {
+        font-size: 1.6rem;
+    }
+    
+    .logo-line2 {
+        font-size: 2.2rem;
+    }
+    
+    .logo-line3 {
+        font-size: 1.4rem;
+    }
+    
+    .kyrlla-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-small);
+    }
+    
+    .benefit-item {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 40px 0;
+        min-height: auto;
+    }
+    
+    .logo-circle {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    
+    .floating-whatsapp {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefit-item {
+        padding: 20px 15px;
+    }
+    
+    .cta-button {
+        padding: 16px 30px;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+/* Preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dispositivos sem hover */
+@media (hover: none) {
+    .benefit-item:hover,
+    .cta-button:hover,
+    .kyrlla-image:hover,
+    .logo-circle:hover,
+    .badge-item:hover {
+        transform: none !important;
+    }
+    
+    .cta-button:hover::before {
+        left: -100%;
+    }
+}
+
+/* Trust Badges */
+.badge-item:hover {
+    transform: translateY(-4px) scale(1.03);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 153, 0, 0.4);
+}
+
+/* Logo SPQ */
+.logo-circle:hover {
+    transform: rotate(3deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(255, 153, 0, 0.4);
+}
+
+/* Imagem da Kyrlla */
+.kyrlla-image:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 25px 60px rgba(255, 153, 0, 0.4);
+    border-color: #ffc266;
+}
+
+/* Efeito hover nos cards de benefício com o mesmo estilo do ícone */
+.benefit-item {
+    transition: transform 0.4s ease, background-color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.benefit-icon {
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-6px) scale(1.05);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 153, 0, 0.3);
+    box-shadow: 0 20px 50px rgba(255, 153, 0, 0.15);
+}
+
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.2);
+    color: #ffc266;
+}
+
+/* Micro-interações nos CTAs */
+.cta-button {
+  will-change: transform;
+  min-height: 48px;
+  padding: 12px 24px;
+}
+
+.cta-button:active {
+  animation: ctaClick 0.3s ease;
+}
+
+@keyframes ctaClick {
+  0% { transform: translateY(-5px) scale(1.03); }
+  50% { transform: translateY(-5px) scale(1.05); }
+  100% { transform: translateY(-5px) scale(1.03); }
+}
+
+/* Botão principal da Hero com pulse */
+.hero .cta-button:hover {
+  animation: pulseCTA 1.5s infinite;
+}
+
+@keyframes pulseCTA {
+  0% { box-shadow: 0 10px 30px rgba(255, 153, 0, 0.3); }
+  50% { box-shadow: 0 15px 40px rgba(255, 153, 0, 0.6); }
+  100% { box-shadow: 0 10px 30px rgba(255, 153, 0, 0.3); }
+}
+
+.selo-garantia {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: float 4s ease-in-out infinite;
+}
+
+.selo-garantia svg {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 2px 5px rgba(255, 153, 0, 0.5));
+}
+
+.selo-garantia span {
+  position: absolute;
+  bottom: 15px;
+  font-weight: 700;
+  color: #FF9900;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  [data-aos] {
+    animation-duration: 0.6s !important;
+    animation-delay: 0s !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .question-icon, .logo-circle, .kyrlla-image {
+    animation: none !important;
+  }
+
+  .background-elements {
+    display: none;
+  }
+
+  .cta-button, .benefit-item, .floating-whatsapp {
+    transform: none !important;
+  }
+}
+
+@media (hover: none) {
+  .cta-button:hover, .benefit-item:hover, .floating-whatsapp:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.card-icon img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px rgba(255, 153, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.daq-card:hover .card-icon img {
+  transform: scale(1.1);
+}
+
+.selos-seguranca {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.selo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  color: #ccc;
+  font-size: 0.9rem;
+  max-width: 100px;
+}
+
+.selo-item img {
+  width: 34px;
+  height: 34px;
+  filter: drop-shadow(0 0 3px rgba(255, 153, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.selo-item:hover img {
+  transform: scale(1.1);
+}

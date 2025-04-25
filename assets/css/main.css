@@ -1,0 +1,15 @@
+@import "./base/variables.css";
+@import "./components/button.css";
+@import "./components/trustbadges.css";
+@import "./components/progression-steps.css";
+@import "./sections/hero.css";
+@import "./sections/beneficits.css";
+@import "./sections/pain.css";
+@import "./sections/works.css";
+@import "./sections/video.css";
+@import "./sections/social.css";
+@import "./sections/beneficios.css";
+@import "./sections/mentor.css";
+@import "./sections/garantia.css";
+@import "./sections/cta.css";
+@import "./components/formulario.css"
