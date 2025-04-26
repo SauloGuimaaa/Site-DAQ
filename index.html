@@ -664,13 +664,17 @@
           <div class="kyrlla-grid">
             <!-- Imagem com loading lazy e srcset para performance -->
             <figure class="kyrlla-image-wrapper"> 
-               <img src="assets/images/Kyrlla2.webp" srcset="assets/images/Kyrlla2.webp 1x, assets/images/Kyrlla2@2x.webp 2x" 
-                alt="Kyrlla, fundadora do DAQ, sorrindo em seu ambiente de trabalho" 
-                class="kyrlla-image" 
-                loading="lazy"
-                width="400"
-                height="500"
-              >
+            <picture>
+              <source srcset="assets/images/Kyrlla2.avif" type="image/avif">
+              <source srcset="assets/images/Kyrlla2.webp" type="image/webp">
+              <img src="assets/images/Kyrlla2.jpg" 
+                   alt="Kyrlla Pattyelly - Mentora especializada" 
+                   class="kyrlla-image"
+                   loading="lazy"
+                   width="400"
+                   height="500">
+            </picture>
+
               <figcaption class="visually-hidden">Kyrlla, fundadora do método DAQ</figcaption>
             </figure>
       
