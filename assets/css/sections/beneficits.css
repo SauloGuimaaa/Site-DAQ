@@ -38,6 +38,8 @@
     color: var(--gray-light);
     line-height: 1.7;
     opacity: 0.9;
+    text-transform: none !important;
+    font-variant: normal !important;
 }
 
 .benefits-grid {

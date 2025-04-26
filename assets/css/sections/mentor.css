@@ -37,6 +37,10 @@
     letter-spacing: 0.05em;
   }
   
+  #fundadora-subtitle {
+    text-transform: uppercase !important;
+  }
+
   .section-title {
     font-size: 2rem;
     line-height: 1.2;
@@ -139,4 +143,16 @@
     font-size: 0.9rem;
     color: #666;
     line-height: 1.4;
+  }
+
+  @media (max-width: 991px) {
+    .kyrlla-image-wrapper {
+      max-width: 300px;
+      margin: 0 auto 2rem;
+    }
+    
+    .kyrlla-image {
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
   }
